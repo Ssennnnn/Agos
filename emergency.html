@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="Figma_img/FAvicon.png">
+
+  <title>Emergency | AGOS</title>
+
+  <meta name="description" content="In an emergency, call 911 and follow instructions from authorities. Submit an emergency assistance report to AGOS.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Garamond:wght@500;600&family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="page-emergency">
+
+  <header class="site-header" id="home">
+    <div class="header-inner">
+
+      <a class="logo" href="index.html" aria-label="AGOS home">
+        <span class="logo-name">AGOS</span>
+        <span class="logo-tag">Stay Informed. Stay Safe</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="safety-guide.html">Guide</a></li>
+          <li><a href="help.html">Help</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn-emergency header-emergency"
+         href="emergency.html"
+         aria-current="page">
+        Emergency
+      </a>
+
+    </div>
+  </header>
+
+  <main class="emergency-main"
+        style="--page-bg: url('Figma_img/Safety-guide1.webp')">
+
+    <div class="emergency-inner">
+
+      <section class="em-panel em-alert"
+               aria-labelledby="em-title">
+
+        <h1 id="em-title">In an emergency?</h1>
+
+        <p class="em-tagline">Get help. Stay safe.</p>
+
+        <p class="em-text">
+          If you are in immediate danger, contact emergency
+          services and follow instructions from authorities.
+        </p>
+
+        <a class="btn-call" href="tel:911">Call 911</a>
+
+      </section>
+
+      <section class="em-panel em-contacts"
+               aria-labelledby="assistance-title">
+
+        <div class="assistance-heading">
+          <h2 id="assistance-title">
+            Request Emergency Assistance
+          </h2>
+
+          <p>
+            Provide details about your situation so your report
+            can be reviewed.
+          </p>
+        </div>
+
+        <form class="emergency-form" action="#" method="post" novalidate>
+
+          <div class="form-field">
+            <label for="full-name">
+              Full Name <span aria-hidden="true">*</span>
+            </label>
+
+            <input
+              id="full-name"
+              name="full_name"
+              type="text"
+              autocomplete="name"
+              placeholder="Enter your full name"
+              required
+            >
+          </div>
+
+          <div class="form-field">
+            <label for="contact-number">
+              Contact Number <span aria-hidden="true">*</span>
+            </label>
+
+            <input
+              id="contact-number"
+              name="contact_number"
+              type="tel"
+              autocomplete="tel"
+              placeholder="Enter a reachable phone number"
+              required
+            >
+          </div>
+
+          <div class="form-field">
+            <label for="emergency-type">
+              Emergency Type <span aria-hidden="true">*</span>
+            </label>
+
+            <select id="emergency-type"
+                    name="emergency_type"
+                    required>
+
+              <option value="" selected disabled>
+                Select an emergency type
+              </option>
+
+              <option value="flooding">Flooding</option>
+              <option value="trapped-person">Person trapped</option>
+              <option value="medical-emergency">
+                Medical emergency
+              </option>
+              <option value="evacuation-assistance">
+                Evacuation assistance
+              </option>
+              <option value="other">Other</option>
+
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="location">
+              Location <span aria-hidden="true">*</span>
+            </label>
+
+            <input
+              id="location"
+              name="location"
+              type="text"
+              autocomplete="street-address"
+              placeholder="Barangay, street, landmark"
+              required
+            >
+          </div>
+
+          <div class="form-field form-field-full">
+            <label for="situation">
+              Describe Your Situation
+              <span aria-hidden="true">*</span>
+            </label>
+
+            <textarea
+              id="situation"
+              name="situation"
+              rows="3"
+              placeholder="Describe the emergency and assistance needed..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-submit">
+
+            <button class="btn-submit-report" type="submit">
+              Submit Emergency Report
+            </button>
+
+            <p class="form-note">
+              Fields marked * are required.
+            </p>
+
+          </div>
+
+        </form>
+
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+
+      <a class="logo logo-footer"
+         href="index.html"
+         aria-label="AGOS home">
+
+        <span class="logo-name">AGOS</span>
+        <span class="logo-tag">Stay Informed. Stay Safe</span>
+
+      </a>
+
+      <div class="connect">
+        <span class="connect-label">Stay Connected:</span>
+
+        <ul class="social">
+
+          <li>
+            <a href="https://www.facebook.com/janssen.murillo/"
+               target="_blank"
+               rel="noopener"
+               aria-label="Facebook">
+              <img src="Figma_img/FB.png" alt="">
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/jnsnmrll/"
+               target="_blank"
+               rel="noopener"
+               aria-label="Instagram">
+              <img src="Figma_img/IG.png" alt="">
+            </a>
+          </li>
+
+          <li>
+            <a href="mailto:jfmurillo@student.hau.edu.ph"
+               aria-label="Email">
+              <img class="icon-mail"
+                   src="Figma_img/GMAIL.png"
+                   alt="">
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <a class="btn-emergency footer-emergency"
+         href="emergency.html"
+         aria-current="page">
+        Emergency
+      </a>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
