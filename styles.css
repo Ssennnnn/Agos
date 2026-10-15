@@ -535,8 +535,8 @@ h1, h2, h3, p {
 .news-body h2 {
   font-family: var(--font-display);
   font-weight: 400;
-  text-transform: uppercase;
   color: var(--navy);
+  text-transform: uppercase;
   font-size: 1.35rem;
   line-height: 1.2;
   margin-bottom: .8rem;
@@ -550,7 +550,7 @@ h1, h2, h3, p {
 .news-body .read-more {
   margin-top: 1rem;
   color: var(--link-blue);
-  font-size: .82rem;
+  font-size: .9rem;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -588,6 +588,19 @@ h1, h2, h3, p {
 .page-head p {
   margin-top: .4rem;
   font-size: 1rem;
+}
+.guide-emergency {
+  padding: 1rem 1.25rem;
+  border-left: 6px solid var(--coral);
+  border-radius: 8px;
+  background: var(--white);
+  color: var(--navy);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.guide-emergency a {
+  font-weight: 700;
+  text-underline-offset: 3px;
 }
 .page-head-dark {
   color: var(--navy);
@@ -809,7 +822,7 @@ h1, h2, h3, p {
   margin: .8rem 0 .35rem;
 }
 .help-panel p, .help-panel li {
-  font-size: .9rem;
+  font-size: .95rem;
   line-height: 1.7;
 }
 .help-panel ul {
@@ -1105,7 +1118,6 @@ body.page-emergency .emergency-main {
   color: var(--white);
 }
 
-
 .emergency-form {
   width: 100%;
   padding: 1.1rem 1.2rem 0.9rem;
@@ -1118,7 +1130,6 @@ body.page-emergency .emergency-main {
   border-radius: 9px;
   color: var(--navy);
 }
-
 
 .form-field {
   display: flex;
@@ -1174,11 +1185,9 @@ body.page-emergency .emergency-main {
   opacity: 1;
 }
 
-
 .form-field-full {
   grid-column: 1 / -1;
 }
-
 
 .form-submit {
   grid-column: 1 / -1;
@@ -1221,10 +1230,6 @@ body.page-emergency .emergency-main {
   text-align: center;
 }
 
-
-
-
-
 .emergency-form.was-validated input:invalid,
 .emergency-form.was-validated select:invalid,
 .emergency-form.was-validated textarea:invalid,
@@ -1232,7 +1237,6 @@ body.page-emergency .emergency-main {
   border: 2px solid #ff3035;
   box-shadow: 0 0 4px rgba(255, 48, 53, 0.35);
 }
-
 
 .emergency-form.was-validated input:valid,
 .emergency-form.was-validated select:valid,
@@ -1253,7 +1257,7 @@ video, iframe {
 
 @media (hover: none) {
   .card:hover, .news-card:hover, .help-panel:hover,
-  .btn-emergency:hover, .btn-call:hover, .btn-submit-report:hover {
+  .btn-emergency:hover, .btn-call:hover {
     transform: none;
   }
 }
@@ -1934,3 +1938,4 @@ video, iframe {
     justify-self: center;
   }
 }
+
