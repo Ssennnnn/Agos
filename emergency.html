@@ -7,7 +7,7 @@
 
   <title>Emergency | AGOS</title>
 
-  <meta name="description" content="In an emergency, call 911 and follow instructions from authorities. Submit an emergency assistance report to AGOS.">
+  <meta name="description" content="In an emergency, call 911 and follow instructions from authorities. The emergency assistance form is not connected to emergency services and does not send reports.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,16 +71,11 @@
 
         <div class="assistance-heading">
           <h2 id="assistance-title">
-            Request Emergency Assistance
+            Emergency Assistance
           </h2>
-
-          <p>
-            Provide details about your situation so your report
-            can be reviewed.
-          </p>
         </div>
 
-        <form class="emergency-form" action="#" method="post" novalidate>
+        <div class="emergency-form" role="form" aria-label="Emergency assistance request">
 
           <div class="form-field">
             <label for="full-name">
@@ -170,18 +165,18 @@
 
           <div class="form-submit">
 
-            <button class="btn-submit-report" type="submit">
-              Submit Emergency Report
+            <button class="btn-submit-report" type="button">
+              Check Required Fields
             </button>
 
             <p class="form-note">
               Fields marked * are required.
             </p>
+            <p class="form-status" role="status" aria-live="polite" hidden></p>
 
           </div>
 
-        </form>
-
+        </div>
       </section>
 
     </div>
@@ -242,6 +237,11 @@
 
     </div>
   </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
 
   <script src="script.js"></script>
 
