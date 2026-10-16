@@ -882,7 +882,7 @@ h1, h2, h3, p {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--white);
-  background: #ff2d2d;
+  background: var(--coral);
   border: 1px solid rgba(255, 255, 255, .6);
   border-radius: 6px;
   padding: .6rem 2.8rem;
@@ -890,7 +890,7 @@ h1, h2, h3, p {
   transition: background .2s, transform .2s;
 }
 .btn-call:hover {
-  background: #e01616;
+  background: var(--coral-dark);
   transform: translateY(-2px);
 }
 
