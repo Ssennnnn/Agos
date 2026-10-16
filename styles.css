@@ -4,8 +4,8 @@
   --sky: #dff3fb;
   --cream: #f4f3ee;
   --white: #ffffff;
-  --coral: #ff5252;
-  --coral-dark: #e63e3e;
+  --coral: #c62828;
+  --coral-dark: #8e1b1b;
   --ink: #0b2b4a;
   --link-blue: #2a6f97;
 
@@ -408,61 +408,6 @@ h1, h2, h3, p {
 .footer-emergency {
   font-size: 1.15rem;
   padding: .6rem 1.9rem;
-}
-
-.emergency-dialog {
-  border: 0;
-  border-radius: 14px;
-  padding: 2rem 2rem 1.6rem;
-  max-width: min(440px, calc(100vw - 32px));
-  color: var(--ink);
-  background: var(--white);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, .4);
-}
-.emergency-dialog::backdrop {
-  background: rgba(11, 43, 74, .6);
-}
-.emergency-dialog h2 {
-  font-family: var(--font-display);
-  font-weight: 400;
-  text-transform: uppercase;
-  font-size: 1.8rem;
-  color: var(--coral);
-  margin-bottom: .6rem;
-}
-.dialog-close {
-  position: absolute;
-  top: .6rem;
-  right: .9rem;
-  font-size: 1.8rem;
-  line-height: 1;
-  background: none;
-  border: 0;
-  cursor: pointer;
-  color: var(--navy);
-}
-.hotlines {
-  margin: 1.2rem 0;
-  display: grid;
-  gap: .6rem;
-}
-.hotlines li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: var(--sky);
-  border-radius: 8px;
-  padding: .7rem 1rem;
-}
-.hotlines a {
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: var(--navy);
-}
-.dialog-note {
-  font-size: .85rem;
-  line-height: 1.6;
 }
 
 .main-nav a[aria-current="page"] {
@@ -956,48 +901,6 @@ h1, h2, h3, p {
   font-size: clamp(1.6rem, 2.4vw, 2rem);
   margin-bottom: 1.6rem;
 }
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.6rem;
-  max-width: 880px;
-  margin: 0 auto;
-}
-.contact-card {
-  height: 100%;
-  min-height: 240px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: .9rem;
-  padding: 1rem;
-  background: rgba(196, 218, 232, .88);
-  border-radius: 10px;
-  text-decoration: none;
-  color: var(--navy);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, .22);
-  transition: transform .2s, box-shadow .2s;
-}
-a.contact-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, .3);
-}
-.contact-name {
-  font-family: var(--font-display);
-  font-size: 2rem;
-  text-transform: uppercase;
-  line-height: 1.1;
-}
-.contact-detail {
-  font-family: var(--font-display);
-  font-size: 1.7rem;
-  color: #000;
-  line-height: 1.1;
-}
-
-
-
 body.page-emergency {
   min-height: 100vh;
   display: flex;
@@ -1007,24 +910,6 @@ body.page-emergency .emergency-main {
   flex: 1;
 }
 
-.card-featured::before,
-.card-small::before,
-.news-card::before {
-  content: "Image slot";
-  grid-column: 1;
-  grid-row: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px dashed rgba(47, 80, 104, .35);
-  background: rgba(47, 80, 104, .08);
-  border-radius: 8px;
-  color: rgba(47, 80, 104, .6);
-  font-family: var(--font-display);
-  font-size: .85rem;
-  letter-spacing: .05em;
-  text-transform: uppercase;
-}
 .card-featured > img,
 .card-small > img,
 .news-card > img {
@@ -1037,7 +922,7 @@ body.page-emergency .emergency-main {
 .card-featured {
   --slot-h: 300px;
 }
-.card-featured::before, .card-featured > img {
+.card-featured > img {
   height: var(--slot-h);
   min-height: 0;
 }
@@ -1051,7 +936,7 @@ body.page-emergency .emergency-main {
   display: grid;
   grid-template-rows: auto 1fr;
 }
-.card-small::before, .card-small > img {
+.card-small > img {
   height: var(--slot-h);
 }
 .card-small > .card-body {
@@ -1059,10 +944,6 @@ body.page-emergency .emergency-main {
   grid-column: 1;
 }
 
-.news-card::before {
-  min-height: 190px;
-  border-radius: 0;
-}
 .news-card > .news-body {
   grid-column: 1;
   grid-row: 2;
@@ -1227,6 +1108,14 @@ body.page-emergency .emergency-main {
 .form-note {
   color: #58758b;
   font-size: 0.7rem;
+  text-align: center;
+}
+
+.form-status {
+  max-width: 48rem;
+  color: var(--navy);
+  font-size: 0.82rem;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -1938,4 +1827,3 @@ video, iframe {
     justify-self: center;
   }
 }
-
